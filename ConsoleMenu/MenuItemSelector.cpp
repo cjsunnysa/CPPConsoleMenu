@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include <iostream>
 #include "MenuItemSelector.h"
+#include <iostream>
 
 using std::cout;
 using std::cin;
@@ -14,14 +14,7 @@ MenuItem* MenuItemSelector::GetMenuItemSelection(Menu* menu)
 	auto inputValue = GetInputValue();
 
 	if (IsBackOrExitSelected(inputValue))
-	{
-		auto returnMenuItem = menu->GetReturnMenuItem();
-
-		return 
-			returnMenuItem == nullptr
-			? menu->GetNullMenuItem()
-			: returnMenuItem;
-	}
+		return GetReturnItem(*menu);
 
 	auto menuItems = menu->GetMenuItems();
 
@@ -40,6 +33,16 @@ string MenuItemSelector::GetInputValue()
 bool MenuItemSelector::IsBackOrExitSelected(string inputValue)
 {
 	return inputValue == "x" || inputValue == "X";
+}
+
+MenuItem* MenuItemSelector::GetReturnItem(Menu& menu)
+{
+	auto returnMenuItem = menu.GetReturnMenuItem();
+
+	return
+		returnMenuItem == nullptr
+		? menu.GetNullMenuItem()
+		: returnMenuItem;
 }
 
 MenuItem* MenuItemSelector::GetSelectedMenuItem(string inputValue, vector<reference_wrapper<MenuItem>> menuItems)
