@@ -29,26 +29,26 @@ int main()
 	Menu exercise10("Exercise 10");
 
 	
-	chapter1.AddMenuItem(&exercise1);
-	chapter1.AddMenuItem(&exercise2);
-	chapter1.AddMenuItem(&exercise3);
+	chapter1.AddMenuItem(exercise1);
+	chapter1.AddMenuItem(exercise2);
+	chapter1.AddMenuItem(exercise3);
 	
-	chapter2.AddMenuItem(&exercise4);
-	chapter2.AddMenuItem(&exercise5);
+	chapter2.AddMenuItem(exercise4);
+	chapter2.AddMenuItem(exercise5);
 	
-	chapter3.AddMenuItem(&exercise6);
+	chapter3.AddMenuItem(exercise6);
 	
-	chapter4.AddMenuItem(&exercise7);
-	chapter4.AddMenuItem(&exercise8);
-	chapter4.AddMenuItem(&exercise9);
+	chapter4.AddMenuItem(exercise7);
+	chapter4.AddMenuItem(exercise8);
+	chapter4.AddMenuItem(exercise9);
 	
-	chapter5.AddMenuItem(&exercise10);
+	chapter5.AddMenuItem(exercise10);
 
-	mainMenu.AddMenuItem(&chapter1);
-	mainMenu.AddMenuItem(&chapter2);
-	mainMenu.AddMenuItem(&chapter3);
-	mainMenu.AddMenuItem(&chapter4);
-	mainMenu.AddMenuItem(&chapter5);
+	mainMenu.AddMenuItem(chapter1);
+	mainMenu.AddMenuItem(chapter2);
+	mainMenu.AddMenuItem(chapter3);
+	mainMenu.AddMenuItem(chapter4);
+	mainMenu.AddMenuItem(chapter5);
 
 
 	mainMenu.Execute();

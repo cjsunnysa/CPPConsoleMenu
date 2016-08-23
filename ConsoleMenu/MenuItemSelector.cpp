@@ -1,10 +1,11 @@
 #include "stdafx.h"
-#include "MenuItemSelector.h"
 #include <iostream>
+#include "MenuItemSelector.h"
 
 using std::cout;
 using std::cin;
 using std::endl;
+using std::reference_wrapper;
 
 MenuItem* MenuItemSelector::GetMenuItemSelection(Menu* menu)
 {
@@ -41,11 +42,11 @@ bool MenuItemSelector::IsBackOrExitSelected(string inputValue)
 	return inputValue == "x" || inputValue == "X";
 }
 
-MenuItem* MenuItemSelector::GetSelectedMenuItem(string inputValue, vector<MenuItem*> menuItems)
+MenuItem* MenuItemSelector::GetSelectedMenuItem(string inputValue, vector<reference_wrapper<MenuItem>> menuItems)
 {
-	for (auto it = menuItems.begin(); it < menuItems.end(); ++it)
-		if ((*it)->MatchesSelection(inputValue))
-			return *it;
+	for (auto menuItem : menuItems)
+		if (menuItem.get().MatchesSelection(inputValue))
+			return &menuItem.get();
 
 	return nullptr;
 }

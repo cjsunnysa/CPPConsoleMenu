@@ -5,10 +5,10 @@
 #include <iostream>
 #include <memory>
 
-void Menu::AddMenuItem(MenuItem* menuItem)
+void Menu::AddMenuItem(MenuItem& menuItem)
 {
-	menuItem->SetReturnMenuItem(this);
-	menuItem->SetMenuItemValue(_menuValueCount++);
+	menuItem.SetReturnMenuItem(this);
+	menuItem.SetMenuItemValue(_menuValueCount++);
 
 	_menuItems.emplace_back(menuItem);
 }
@@ -19,11 +19,11 @@ void Menu::Execute()
 
 	do
 	{
-		std::cout << std::endl;
-		std::cout << std::endl;
-
 		MenuPrinter::PrintMenu(this);
 		selectedMenuItem = MenuItemSelector::GetMenuItemSelection(this);
+
+		std::cout << std::endl;
+		std::cout << std::endl;
 
 	} while (selectedMenuItem == nullptr);
 	

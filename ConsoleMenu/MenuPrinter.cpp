@@ -21,10 +21,10 @@ void MenuPrinter::PrintHeader(string header)
 	cout << endl;
 }
 
-void MenuPrinter::PrintMenuItems(vector<MenuItem*> menuItems)
+void MenuPrinter::PrintMenuItems(vector<reference_wrapper<MenuItem>>& menuItems)
 {
-	for (auto it = menuItems.begin(); it < menuItems.end(); ++it)
-		cout << (*it)->GetMenuItemValue() << "\t" << (*it)->GetMenuItemDescription() << endl;
+	for (auto menuItem : menuItems)
+		cout << menuItem.get().GetMenuItemValue() << "\t" << menuItem.get().GetMenuItemDescription() << endl;
 
 	cout << "x" << "\t" << "Return/Exit" << endl;
 
