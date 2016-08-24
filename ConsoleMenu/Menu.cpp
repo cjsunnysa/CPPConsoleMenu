@@ -5,12 +5,12 @@
 #include <iostream>
 #include <memory>
 
-void Menu::AddMenuItem(MenuItem& menuItem)
+void Menu::AddMenuItem(MenuItem* menuItem)
 {
-	menuItem.SetReturnMenuItem(this);
-	menuItem.SetMenuItemValue(_menuValueCount++);
+	menuItem->SetReturnMenuItem(this);
+	menuItem->SetMenuItemValue(_menuValueCount++);
 
-	_menuItems.emplace_back(menuItem);
+	_menuItems.emplace_back(*menuItem);
 }
 
 void Menu::Execute()

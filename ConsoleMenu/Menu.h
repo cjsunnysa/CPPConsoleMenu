@@ -23,7 +23,7 @@ public:
 	vector<reference_wrapper<MenuItem>> GetMenuItems() const { return _menuItems; };
 	MenuItem* const GetNullMenuItem() { return &_nullMenuItem; };
 	
-	void AddMenuItem(MenuItem& menuItem);
+	void AddMenuItem(MenuItem* menuItem);
 
 	virtual void Execute() override;
 };
