@@ -7,21 +7,21 @@ using std::cin;
 using std::endl;
 using std::reference_wrapper;
 
-MenuItem* MenuItemSelector::GetMenuItemSelection(Menu* menu)
+MenuItem* const MenuItemSelector::GetMenuItemSelection(Menu& const menu)
 {
 	cout << "Please enter a selection: ";
 
 	auto inputValue = GetInputValue();
 
 	if (IsBackOrExitSelected(inputValue))
-		return GetReturnItem(*menu);
+		return GetReturnItem(menu);
 
-	auto menuItems = menu->GetMenuItems();
+	auto menuItems = menu.GetMenuItems();
 
 	return GetSelectedMenuItem(inputValue, menuItems);
 }
 
-string MenuItemSelector::GetInputValue()
+string const MenuItemSelector::GetInputValue()
 {
 	string inputValue;
 
@@ -30,7 +30,7 @@ string MenuItemSelector::GetInputValue()
 	return inputValue;
 }
 
-bool MenuItemSelector::IsBackOrExitSelected(string inputValue)
+bool const MenuItemSelector::IsBackOrExitSelected(const string& inputValue)
 {
 	return inputValue == "x" || inputValue == "X";
 }
@@ -45,7 +45,7 @@ MenuItem* MenuItemSelector::GetReturnItem(Menu& menu)
 		: returnMenuItem;
 }
 
-MenuItem* MenuItemSelector::GetSelectedMenuItem(string inputValue, vector<reference_wrapper<MenuItem>> menuItems)
+MenuItem* const  MenuItemSelector::GetSelectedMenuItem(string const inputValue, vector<reference_wrapper<MenuItem>> const menuItems)
 {
 	for (auto menuItem : menuItems)
 		if (menuItem.get().MatchesSelection(inputValue))

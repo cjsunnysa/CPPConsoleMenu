@@ -7,14 +7,14 @@ using std::cout;
 using std::endl;
 using std::uppercase;
 
-void MenuPrinter::PrintMenu(Menu* menu)
+void MenuPrinter::PrintMenu(const Menu& menu)
 {
-	PrintHeader(menu->GetMenuItemDescription());
-	PrintMenuItems(menu->GetMenuItems());
+	PrintHeader(menu.GetMenuItemDescription());
+	PrintMenuItems(menu.GetMenuItems());
 }
 
 
-void MenuPrinter::PrintHeader(string& header)
+void MenuPrinter::PrintHeader(const string& header)
 {
 	auto formattedHeader = FormatHeader(header);
 
@@ -22,7 +22,7 @@ void MenuPrinter::PrintHeader(string& header)
 	cout << endl;
 }
 
-void MenuPrinter::PrintMenuItems(vector<reference_wrapper<MenuItem>>& menuItems)
+void MenuPrinter::PrintMenuItems(const vector<reference_wrapper<MenuItem>>& menuItems)
 {
 	for (auto menuItemRef : menuItems)
 	{
@@ -38,7 +38,7 @@ void MenuPrinter::PrintMenuItems(vector<reference_wrapper<MenuItem>>& menuItems)
 }
 
 
-string MenuPrinter::FormatHeader(string& header)
+string MenuPrinter::FormatHeader(const string& header)
 {
 	string upperHeader;
 
@@ -48,7 +48,7 @@ string MenuPrinter::FormatHeader(string& header)
 	return upperHeader;
 }
 
-string MenuPrinter::FormatMenuItem(MenuItem& menuItem)
+string MenuPrinter::FormatMenuItem(const MenuItem& menuItem)
 {
 	auto formattedValue = FormatMenuValue(menuItem.GetMenuItemValue());
 	auto formattedDescription = FormatMenuDescription(menuItem.GetMenuItemDescription());
@@ -65,12 +65,12 @@ string MenuPrinter::CreateReturnExitItem()
 }
 
 
-string MenuPrinter::FormatMenuValue(string& value)
+string MenuPrinter::FormatMenuValue(const string& value)
 {
 	return string("[" + value + "]");
 }
 
-string MenuPrinter::FormatMenuDescription(string& value)
+string MenuPrinter::FormatMenuDescription(const string& value)
 {
 	return string("\t" + value);
 }

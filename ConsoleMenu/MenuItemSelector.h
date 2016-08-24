@@ -6,11 +6,11 @@
 class MenuItemSelector
 {
 private:
-	static bool IsBackOrExitSelected(string inputValue);
-	static string GetInputValue();
-	static MenuItem* MenuItemSelector::GetSelectedMenuItem(string inputValue, vector<reference_wrapper<MenuItem>> menuItems);
+	static bool const IsBackOrExitSelected(const string& inputValue);
+	static string const GetInputValue();
+	static MenuItem* const GetSelectedMenuItem(string const inputValue, vector<reference_wrapper<MenuItem>> const menuItems);
 	static MenuItem* GetReturnItem(Menu& menu);
 public:
-	static MenuItem* GetMenuItemSelection(Menu* menu);
+	static MenuItem* const GetMenuItemSelection(Menu& const menu);
 };
 

@@ -19,8 +19,8 @@ void Menu::Execute()
 
 	do
 	{
-		MenuPrinter::PrintMenu(this);
-		selectedMenuItem = MenuItemSelector::GetMenuItemSelection(this);
+		MenuPrinter::PrintMenu(*this);
+		selectedMenuItem = MenuItemSelector::GetMenuItemSelection(*this);
 
 		std::cout << std::endl;
 		std::cout << std::endl;

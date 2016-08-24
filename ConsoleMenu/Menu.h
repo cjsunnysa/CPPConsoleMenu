@@ -21,7 +21,7 @@ public:
 		_nullMenuItem(NullMenuItem()) {};
 	
 	vector<reference_wrapper<MenuItem>> GetMenuItems() const { return _menuItems; };
-	MenuItem* GetNullMenuItem() { return &_nullMenuItem; };
+	MenuItem* const GetNullMenuItem() { return &_nullMenuItem; };
 	
 	void AddMenuItem(MenuItem& menuItem);
 
