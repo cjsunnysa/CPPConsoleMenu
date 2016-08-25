@@ -39,6 +39,9 @@
     <ClInclude Include="PolymorphismByReference.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ExecutableMenuItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -59,10 +62,10 @@
     <ClCompile Include="MenuItemSelector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NullMenuItem.cpp">
+    <ClCompile Include="PolymorphismByReference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PolymorphismByReference.cpp">
+    <ClCompile Include="ExecutableMenuItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 
-void PolymorphismByReference::Execute()
+void PolymorphismByReference::ExecuteFunction()
 {
 	Duck duck;
 	RubberDuck rubberDuck;
@@ -32,8 +32,6 @@ void PolymorphismByReference::Execute()
 	MakeDuckQuack(decoyDuck);
 
 	cout << endl;
-
-	_returnMenuItem->Execute();
 }
 
 void PolymorphismByReference::MakeDuckQuack(Duck& duck)
