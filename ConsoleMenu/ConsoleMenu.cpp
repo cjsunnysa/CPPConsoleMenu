@@ -8,6 +8,7 @@
 #include "RotateArray.h"
 #include "LastExecutedMenuItem.h"
 #include "RotateArrayBubble.h"
+#include "RotateArray3Reversal.h"
 
 using std::unique_ptr;
 
@@ -36,6 +37,7 @@ int main()
 	
 	RotateArray rotateArray;
 	RotateArrayBubble rotateArrayBubble;
+	RotateArray3Reversal rotateArray3Reversal;
 	PolymorphismByReference polyByRef;
 	
 	chapter1.AddMenuItem(&exercise1);
@@ -53,6 +55,7 @@ int main()
 	
 	algorithms.AddMenuItem(&rotateArray);
 	algorithms.AddMenuItem(&rotateArrayBubble);
+	algorithms.AddMenuItem(&rotateArray3Reversal);
 	experiments.AddMenuItem(&polyByRef);
 
 	mainMenu.AddMenuItem(&chapter1);

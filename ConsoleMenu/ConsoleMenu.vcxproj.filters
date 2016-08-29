@@ -72,6 +72,9 @@
     <ClInclude Include="RotateArrayBubble.h">
       <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
+    <ClInclude Include="RotateArray3Reversal.h">
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -108,6 +111,9 @@
       <Filter>Source Files\MenuItems</Filter>
     </ClCompile>
     <ClCompile Include="RotateArrayBubble.cpp">
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateArray3Reversal.cpp">
       <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
   </ItemGroup>

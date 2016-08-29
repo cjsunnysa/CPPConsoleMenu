@@ -10,7 +10,10 @@ using std::endl;
 void RotateArray::ExecuteFunction()
 {
 	cout << "shifting array items " << std::to_string(_rightShiftCount) << " to the right:" << endl << endl;
-	
+
+	if (_rightShiftCount > _myarray.size())
+		_rightShiftCount %= _myarray.size();
+
 	PrintArray("before:");
 
 	RotateRight(_rightShiftCount);
