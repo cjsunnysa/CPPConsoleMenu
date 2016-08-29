@@ -9,6 +9,8 @@
 #include "LastExecutedMenuItem.h"
 #include "RotateArrayBubble.h"
 #include "RotateArray3Reversal.h"
+#include "ReverseWordsInString.h"
+#include "ReverseWordsInStringStream.h"
 
 using std::unique_ptr;
 
@@ -39,6 +41,8 @@ int main()
 	RotateArrayBubble rotateArrayBubble;
 	RotateArray3Reversal rotateArray3Reversal;
 	PolymorphismByReference polyByRef;
+	ReverseWordsInString reverseWordsInString;
+	ReverseWordsInStringStream reverseWordsInStringStream;
 	
 	chapter1.AddMenuItem(&exercise1);
 	chapter1.AddMenuItem(&exercise2);
@@ -56,6 +60,9 @@ int main()
 	algorithms.AddMenuItem(&rotateArray);
 	algorithms.AddMenuItem(&rotateArrayBubble);
 	algorithms.AddMenuItem(&rotateArray3Reversal);
+	algorithms.AddMenuItem(&reverseWordsInString);
+	algorithms.AddMenuItem(&reverseWordsInStringStream);
+	
 	experiments.AddMenuItem(&polyByRef);
 
 	mainMenu.AddMenuItem(&chapter1);

@@ -151,6 +151,8 @@
     <ClInclude Include="MenuItemSelector.h" />
     <ClInclude Include="MenuPrinter.h" />
     <ClInclude Include="NullMenuItem.h" />
+    <ClInclude Include="ReverseWordsInString.h" />
+    <ClInclude Include="ReverseWordsInStringStream.h" />
     <ClInclude Include="RotateArray.h" />
     <ClInclude Include="RotateArray3Reversal.h" />
     <ClInclude Include="RotateArrayBubble.h" />
@@ -167,6 +169,8 @@
     <ClCompile Include="MenuItem.cpp" />
     <ClCompile Include="MenuItemSelector.cpp" />
     <ClCompile Include="MenuPrinter.cpp" />
+    <ClCompile Include="ReverseWordsInString.cpp" />
+    <ClCompile Include="ReverseWordsInStringStream.cpp" />
     <ClCompile Include="RotateArray.cpp" />
     <ClCompile Include="RotateArray3Reversal.cpp" />
     <ClCompile Include="RotateArrayBubble.cpp" />

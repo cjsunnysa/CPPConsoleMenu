@@ -75,6 +75,12 @@
     <ClInclude Include="RotateArray3Reversal.h">
       <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
+    <ClInclude Include="ReverseWordsInString.h">
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClInclude>
+    <ClInclude Include="ReverseWordsInStringStream.h">
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -114,6 +120,12 @@
       <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
     <ClCompile Include="RotateArray3Reversal.cpp">
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWordsInString.cpp">
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWordsInStringStream.cpp">
       <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
   </ItemGroup>
