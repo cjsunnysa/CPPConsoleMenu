@@ -13,17 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\ExecutableMenuItems">
-      <UniqueIdentifier>{3de4f12c-3620-4712-acf5-4448bc873838}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ExecutableMenuItems">
-      <UniqueIdentifier>{50761705-795b-4ef9-8e59-826d9d874a20}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Utilities">
       <UniqueIdentifier>{3645f06f-1ded-42f1-bcc0-4892ce7a9a31}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Utilities">
       <UniqueIdentifier>{43f08b37-3363-4aaf-b991-e229173bb900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MenuItems">
+      <UniqueIdentifier>{d42e8c06-ba96-479d-a266-40a954b45e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MenuItems">
+      <UniqueIdentifier>{60633fed-48d6-4801-8f86-7fdb1eaf2d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MenuItems\ExecutableMenuItems">
+      <UniqueIdentifier>{3de4f12c-3620-4712-acf5-4448bc873838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MenuItems\ExecutableMenuItems">
+      <UniqueIdentifier>{50761705-795b-4ef9-8e59-826d9d874a20}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,20 +39,11 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MenuItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NullMenuItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ExecutableMenuItem.h">
-      <Filter>Header Files\ExecutableMenuItems</Filter>
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
     <ClInclude Include="PolymorphismByReference.h">
-      <Filter>Header Files\ExecutableMenuItems</Filter>
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
     <ClInclude Include="MenuItemSelector.h">
       <Filter>Header Files\Utilities</Filter>
@@ -55,13 +52,25 @@
       <Filter>Header Files\Utilities</Filter>
     </ClInclude>
     <ClInclude Include="RotateArray.h">
-      <Filter>Header Files\ExecutableMenuItems</Filter>
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
     <ClInclude Include="FileHandler.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItem.h">
+      <Filter>Header Files\MenuItems</Filter>
+    </ClInclude>
+    <ClInclude Include="NullMenuItem.h">
+      <Filter>Header Files\MenuItems</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\MenuItems</Filter>
     </ClInclude>
     <ClInclude Include="LastExecutedMenuItem.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\MenuItems</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateArrayBubble.h">
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,17 +80,11 @@
     <ClCompile Include="ConsoleMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MenuItem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ExecutableMenuItem.cpp">
-      <Filter>Source Files\ExecutableMenuItems</Filter>
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
     <ClCompile Include="PolymorphismByReference.cpp">
-      <Filter>Source Files\ExecutableMenuItems</Filter>
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
     <ClCompile Include="MenuItemSelector.cpp">
       <Filter>Source Files\Utilities</Filter>
@@ -90,13 +93,22 @@
       <Filter>Source Files\Utilities</Filter>
     </ClCompile>
     <ClCompile Include="RotateArray.cpp">
-      <Filter>Source Files\ExecutableMenuItems</Filter>
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
     <ClCompile Include="FileHandler.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Utilities</Filter>
     </ClCompile>
     <ClCompile Include="LastExecutedMenuItem.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\MenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuItem.cpp">
+      <Filter>Source Files\MenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\MenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateArrayBubble.cpp">
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

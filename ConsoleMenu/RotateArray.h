@@ -8,16 +8,22 @@ class RotateArray :
 	public ExecutableMenuItem
 {
 private:
-	array<int, 10> _myarray { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	
-	void PrintArray(string label);
-	void RotateRight(short count);
+	short _rightShiftCount;
 
 protected:
+	array<int, 10> _myarray{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
 	void ExecuteFunction() override;
+	void PrintArray(string label);
+	virtual void RotateRight(short count);
+
+	RotateArray(string description, short rightShiftCount) :
+		ExecutableMenuItem(description),
+		_rightShiftCount(rightShiftCount) {};
 
 public:
 	RotateArray() :
-		ExecutableMenuItem("Rotate Array") {};
+		ExecutableMenuItem("Rotate Array"),
+		_rightShiftCount(3) {};
 };
 

@@ -9,9 +9,11 @@ using std::endl;
 
 void RotateArray::ExecuteFunction()
 {
+	cout << "shifting array items " << std::to_string(_rightShiftCount) << " to the right:" << endl << endl;
+	
 	PrintArray("before:");
 
-	RotateRight(14);
+	RotateRight(_rightShiftCount);
 
 	PrintArray("after:");
 }
