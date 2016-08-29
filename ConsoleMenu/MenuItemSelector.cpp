@@ -7,7 +7,7 @@ using std::cin;
 using std::endl;
 using std::reference_wrapper;
 
-MenuItem* const MenuItemSelector::GetMenuItemSelection(Menu& const menu)
+MenuItem* const MenuItemSelector::GetMenuItemSelection(Menu& menu)
 {
 	cout << "Please enter a selection: ";
 

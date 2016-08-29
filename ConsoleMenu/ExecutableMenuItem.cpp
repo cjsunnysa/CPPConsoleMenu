@@ -2,12 +2,15 @@
 #include "ExecutableMenuItem.h"
 #include "MenuPrinter.h"
 #include <iostream>
+#include "FileHandler.h"
 
 using std::cout;
 using std::endl;
 
 void ExecutableMenuItem::Execute()
 {
+	FileHandler::SaveLastExecutedItem(*this);
+
 	system("cls");
 
 	MenuPrinter::PrintHeader(this->GetMenuItemDescription());

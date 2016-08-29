@@ -6,6 +6,7 @@
 #include <memory>
 #include "PolymorphismByReference.h"
 #include "RotateArray.h"
+#include "LastExecutedMenuItem.h"
 
 using std::unique_ptr;
 
@@ -19,6 +20,7 @@ int main()
 	Menu chapter4("Chapter 4");
 	Menu algorithms("Algorithms");
 	Menu experiments("Experiments");
+	LastExecutedMenuItem lastExecutedMenuItem(mainMenu);
 
 	Menu exercise1("Exercise 1");
 	Menu exercise2("Exercise 2");
@@ -56,6 +58,8 @@ int main()
 	mainMenu.AddMenuItem(&chapter4);
 	mainMenu.AddMenuItem(&algorithms);
 	mainMenu.AddMenuItem(&experiments);
+	mainMenu.AddMenuItem(&lastExecutedMenuItem);
+
 
 	mainMenu.Execute();
 	

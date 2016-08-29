@@ -11,6 +11,6 @@ private:
 	static MenuItem* const GetSelectedMenuItem(string const inputValue, vector<reference_wrapper<MenuItem>> const menuItems);
 	static MenuItem* GetReturnItem(Menu& menu);
 public:
-	static MenuItem* const GetMenuItemSelection(Menu& const menu);
+	static MenuItem* const GetMenuItemSelection(Menu& menu);
 };
 

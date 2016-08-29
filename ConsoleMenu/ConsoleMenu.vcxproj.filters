@@ -57,6 +57,12 @@
     <ClInclude Include="RotateArray.h">
       <Filter>Header Files\ExecutableMenuItems</Filter>
     </ClInclude>
+    <ClInclude Include="FileHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LastExecutedMenuItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -85,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="RotateArray.cpp">
       <Filter>Source Files\ExecutableMenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LastExecutedMenuItem.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

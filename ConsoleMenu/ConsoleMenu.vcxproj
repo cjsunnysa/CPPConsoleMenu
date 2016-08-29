@@ -143,6 +143,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ExecutableMenuItem.h" />
+    <ClInclude Include="FileHandler.h" />
+    <ClInclude Include="LastExecutedMenuItem.h" />
     <ClInclude Include="PolymorphismByReference.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MenuItem.h" />
@@ -156,6 +158,8 @@
   <ItemGroup>
     <ClCompile Include="ConsoleMenu.cpp" />
     <ClCompile Include="ExecutableMenuItem.cpp" />
+    <ClCompile Include="FileHandler.cpp" />
+    <ClCompile Include="LastExecutedMenuItem.cpp" />
     <ClCompile Include="PolymorphismByReference.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MenuItem.cpp" />
