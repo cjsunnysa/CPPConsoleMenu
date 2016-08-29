@@ -8,18 +8,13 @@ using std::endl;
 
 void ExecutableMenuItem::Execute()
 {
-	cout << "================================================" << endl;
-	cout << endl;
+	system("cls");
 
 	MenuPrinter::PrintHeader(this->GetMenuItemDescription());
 
 	cout << endl;
 
 	ExecuteFunction();
-
-	cout << endl;
-
-	cout << "================================================" << endl;
 
 	cout << endl;
 	cout << endl;

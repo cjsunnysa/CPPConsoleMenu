@@ -5,6 +5,7 @@ class ExecutableMenuItem :
 {
 protected:
 	virtual void ExecuteFunction() = 0;
+
 public:
 	ExecutableMenuItem(string description) :
 		MenuItem(description) {};
