@@ -6,6 +6,9 @@ void RotateArrayBubble::RotateRight(short count)
 {
 	const int arrSize = static_cast<int>(_myarray.size());
 
+	if (count > arrSize)
+		count %= arrSize;
+
 	for (auto i = 0; i < count; ++i)
 	{
 		for (auto j = arrSize - 1; j > 0; --j)
