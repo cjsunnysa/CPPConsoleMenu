@@ -11,6 +11,7 @@
 #include "RotateArray3Reversal.h"
 #include "ReverseWordsInString.h"
 #include "ReverseWordsInStringStream.h"
+#include "ReverseWordsInPlace.h"
 
 using std::unique_ptr;
 
@@ -43,6 +44,7 @@ int main()
 	PolymorphismByReference polyByRef;
 	ReverseWordsInString reverseWordsInString;
 	ReverseWordsInStringStream reverseWordsInStringStream;
+	ReverseWordsInPlace reverseWordsInPlace;
 	
 	chapter1.AddMenuItem(&exercise1);
 	chapter1.AddMenuItem(&exercise2);
@@ -62,6 +64,7 @@ int main()
 	algorithms.AddMenuItem(&rotateArray3Reversal);
 	algorithms.AddMenuItem(&reverseWordsInString);
 	algorithms.AddMenuItem(&reverseWordsInStringStream);
+	algorithms.AddMenuItem(&reverseWordsInPlace);
 	
 	experiments.AddMenuItem(&polyByRef);
 

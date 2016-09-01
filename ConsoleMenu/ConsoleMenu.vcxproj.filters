@@ -81,6 +81,9 @@
     <ClInclude Include="ReverseWordsInStringStream.h">
       <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
     </ClInclude>
+    <ClInclude Include="ReverseWordsInPlace.h">
+      <Filter>Header Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -126,6 +129,9 @@
       <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
     <ClCompile Include="ReverseWordsInStringStream.cpp">
+      <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWordsInPlace.cpp">
       <Filter>Source Files\MenuItems\ExecutableMenuItems</Filter>
     </ClCompile>
   </ItemGroup>
